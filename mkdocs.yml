@@ -1,7 +1,8 @@
 site_name: fanzVOUCHER
 site_url: https://fanz-io.github.io/voucher-documentation
 nav:
-  - Usage: usage/
+  - Properties: usage/
+  - Scenarios: scenarios/
   - Architecture: arch/
   - API: api/
 theme:
@@ -13,9 +14,12 @@ theme:
   features:
     - content.code.copy
 copyright: Copyright &copy; 2024 Fanz GmbH
+extra_css:
+  - stylesheets/extra.css
 extra:
   generator: false
 markdown_extensions:
+  - def_list
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -32,6 +36,10 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - tables
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - include-markdown:
