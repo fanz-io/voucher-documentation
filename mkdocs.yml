@@ -1,9 +1,12 @@
 site_name: fanzVOUCHER
+site_url: https://fanz-io.github.io/voucher-documentation
 nav:
-  - Home: index.md
+  - Architecture: /arch/
   - API: /documentation/
 theme:
   name: material
+  font:
+    text: IBM Plex Sans
   palette:
     primary: teal
 copyright: Copyright &copy; 2024 Fanz GmbH
