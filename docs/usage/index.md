@@ -1,1 +1,3 @@
-# Creating a voucher
+{%
+ include "./voucher-definition.md"
+%}
