@@ -52,3 +52,4 @@ plugins:
       heading_offset: 0
       start: <!--start-->
       end: <!--end-->
+  - tags

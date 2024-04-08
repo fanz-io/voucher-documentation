@@ -1,6 +1,9 @@
 # Scenarios
 
-## Create a default voucher
+{%
+    include "./snippets/index.md"
+%}
+
 
 ## Create a limited voucher by quota
 
