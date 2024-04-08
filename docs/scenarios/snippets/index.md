@@ -1,3 +1,5 @@
+<!--start-->
 {%
-    include "./createDefaultVoucher/index.md"
+    include "./*/index.md"
 %}
+<!--end-->

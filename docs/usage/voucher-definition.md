@@ -1,27 +1,45 @@
+<!--start-->
 # Voucher
-
 
 ## Properties
 Our voucher entity has multiple properties you can control.
 
-### amount (`numeric`)
+### amount (`numeric`) ~**required**~
 
 The numeric is the value, which defines the reduction of the amount to pay.
 
 !!! example "Example"
     `44`
 
-### type (`VoucherType`)
+!!! danger "If not provided..."
+    ```javascript
+    {
+        "message": "AMOUNT_REQUIRED",
+        "error": "Bad Request",
+        "statusCode": 400
+    }
+    ```
+
+### type (`VoucherType`) ~**required**~
 
 The type of the voucher defines if the amount is just an amount of money, that will be substracted or if it's a percentage value.
 
-| Value        | Description                                 | Default|
-| ------------ | ------------------------------------------- | :-----: |
-| `AMOUNT`     | The [amount](#amount) is (money) value.|    | :material-check:   
-| `PERCENTAGE` | The [amount](#amount) is a percentage value.|     |
+| Value        | Description                                 | 
+| ------------ | ------------------------------------------- | 
+| `AMOUNT`     | The [amount](#amount) is (money) value.|    | 
+| `PERCENTAGE` | The [amount](#amount) is a percentage value.| 
 
 !!! example "Example"
     `PERCENTAGE`
+
+!!! danger "If not provided..."
+    ```javascript
+    {
+        "message": "TYPE_REQUIRED",
+        "error": "Bad Request",
+        "statusCode": 400
+    }
+    ```
 
 ### name (`string`)
 
@@ -46,6 +64,13 @@ For analysis you can add a reference to a voucher to keep track of the status.
 !!! example "Example"
     `Folio: 0815`
 
+### code (`string`)
+
+You can provide a code on your own. But you can also use the [CodeGenerator](#codegeneratorsettings-vouchercodegeneratorsettings)
+
+!!! example Example
+    `MY-CODE-2024`
+
 ### validFrom (`date`)
 You can create a voucher that will only become valid in the future.
 
@@ -69,7 +94,7 @@ You can create a voucher that will only become valid in the future.
     validFrom + 1 year
 
 !!! example Example
-    `1987-12-23T11:54:00`
+    `1988-12-23T11:54:00`
 
 ### usage (`VoucherUsage`)
 
@@ -115,5 +140,49 @@ Easily mark a voucher as not valid anymore.
 !!! tip "Default"
     `false`
 
+### customerReference (`json`)
 
+You can provide more details about the owner of the voucher - if you have.
 
+!!! tip "Object definition"
+    We recommend to use this structure, to serialize the data.
+    Provide only fields you have.
+
+    ```javascript
+    {
+        "email": "",
+        "firstname": "",
+        "lastname": "",
+        "phone": ""
+        "salutation": "Choose from `Mr`, `Mrs`"
+    }
+
+    ```
+
+### thirdPartyPayload (`json`)
+
+You can add own information to a generated voucher. 
+
+!!! warning "We will not process any of the information in this property"
+
+!!! tip "Object definition"
+    It's up to you, what you want to add.
+
+    ```javascript
+    {
+        "appRef": "",
+        "customerId": "",
+        "arragementId": "",
+    }
+
+    ```
+
+### codeGeneratorSettings (`VoucherCodeGeneratorSettings`)
+
+You can use a built in generator to let you create codes.
+
+!!! explanation "Definition"
+    {%
+        include "../scenarios/snippets/codeGeneratorSettings.md"
+    %}
+<!--end-->
