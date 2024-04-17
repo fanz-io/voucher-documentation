@@ -43,7 +43,7 @@
 
 ### PERCENTAGE voucher
 
-If it's a percentage voucher, the redeemation is straight forward: **The whole voucher code will marked as `REDEEMED` and is not available anymore**.
+If it's a percentage voucher, the redemption is straight forward: **The whole voucher code will marked as `REDEEMED` and is not available anymore**.
 
 ### AMOUNT voucher
 
