@@ -1,0 +1,732 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://fanz-io.github.io/voucher-documentation/usage/voucher-definition/">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Voucher definition - fanzVOUCHER</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#voucher" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="fanzVOUCHER" class="md-header__button md-logo" aria-label="fanzVOUCHER" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            fanzVOUCHER
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Voucher definition
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="fanzVOUCHER" class="md-nav__button md-logo" aria-label="fanzVOUCHER" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    fanzVOUCHER
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amount-numeric-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      amount (numeric) required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-vouchertype-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      type (VoucherType) required
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      name (string)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#description-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      description (string)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      reference (string)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      code (string)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validfrom-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      validFrom (date)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validuntil-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      validUntil (date)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-voucherusage" class="md-nav__link">
+    <span class="md-ellipsis">
+      usage (VoucherUsage)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quota-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      quota (number)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      default (boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deactivated-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      deactivated (boolean)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customerreference-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      customerReference (json)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thirdpartypayload-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      thirdPartyPayload (json)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codegeneratorsettings-vouchercodegeneratorsettings" class="md-nav__link">
+    <span class="md-ellipsis">
+      codeGeneratorSettings (VoucherCodeGeneratorSettings)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<!--start-->
+<h1 id="voucher">Voucher</h1>
+<h2 id="properties">Properties</h2>
+<p>Our voucher entity has multiple properties you can control.</p>
+<h3 id="amount-numeric-required">amount (<code>numeric</code>) <sub><strong>required</strong></sub></h3>
+<p>The numeric is the value, which defines the reduction of the amount to pay.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>44</code></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">If not provided...</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AMOUNT_REQUIRED&quot;</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="s2">&quot;error&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Bad Request&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="s2">&quot;statusCode&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">400</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<h3 id="type-vouchertype-required">type (<code>VoucherType</code>) <sub><strong>required</strong></sub></h3>
+<p>The type of the voucher defines if the amount is just an amount of money, that will be substracted or if it's a percentage value.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AMOUNT</code></td>
+<td>The <a href="#amount">amount</a> is (money) value.</td>
+</tr>
+<tr>
+<td><code>PERCENTAGE</code></td>
+<td>The <a href="#amount">amount</a> is a percentage value.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>PERCENTAGE</code></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">If not provided...</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;TYPE_REQUIRED&quot;</span><span class="p">,</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="s2">&quot;error&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Bad Request&quot;</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="s2">&quot;statusCode&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">400</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<h3 id="name-string">name (<code>string</code>)</h3>
+<p>A voucher can have a name. The value will not be displayed when redeeming a voucher.
+You will retrieve this information via webhook payload.</p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p><code>Et tu, Brute?</code></p>
+</div>
+<h3 id="description-string">description (<code>string</code>)</h3>
+<p>A voucher can have a description. The value will not be displayed when redeeming a voucher.
+You will retrieve this information via webhook payload.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>Alea iacta est - A Latin proverb, but stolen from the Greek.</code></p>
+</div>
+<h3 id="reference-string">reference (<code>string</code>)</h3>
+<p>For analysis you can add a reference to a voucher to keep track of the status. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>Folio: 0815</code></p>
+</div>
+<h3 id="code-string">code (<code>string</code>)</h3>
+<p>You can provide a code on your own. But you can also use the <a href="#codegeneratorsettings-vouchercodegeneratorsettings">CodeGenerator</a></p>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p><code>MY-CODE-2024</code></p>
+</div>
+<h3 id="validfrom-date">validFrom (<code>date</code>)</h3>
+<p>You can create a voucher that will only become valid in the future.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Format</p>
+<p>As defined in <code>ISO 8601</code> use a date time format like <code>YYYY-MM-DDThh:mm:ss</code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Default</p>
+<p>DateTime of creation.</p>
+</div>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p><code>1987-12-23T11:54:00</code></p>
+</div>
+<h3 id="validuntil-date">validUntil (<code>date</code>)</h3>
+<p>You can create a voucher that will only become valid in the future.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Format</p>
+<p>As defined in <code>ISO 8601</code> use a date time format like <code>YYYY-MM-DDThh:mm:ss</code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Default</p>
+<p>validFrom + 1 year</p>
+</div>
+<div class="admonition example example">
+<p class="admonition-title">Example</p>
+<p><code>1988-12-23T11:54:00</code></p>
+</div>
+<h3 id="usage-voucherusage">usage (<code>VoucherUsage</code>)</h3>
+<p>A voucher is assigned to a specific group of people, e.g. to carry out targeted marketing campaigns with a voucher.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+<th style="text-align: center;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PUBLIC</code></td>
+<td>The voucher code is available for everyone.</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>CUSTOMER</code></td>
+<td>The voucher is for <strong>one</strong> specific customer.</td>
+<td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>PUBLIC</code></p>
+</div>
+<h3 id="quota-number">quota (<code>number</code>)</h3>
+<p>A quota limits the generation of a voucher.
+If you created a voucher for a campaign you can limit how often the voucher could redeemed.</p>
+<div class="admonition tip">
+<p class="admonition-title">Explanation</p>
+<ul>
+<li>Let's asume, you're having a campaign for example "The first 100 will have a 5 %".</li>
+<li>The voucher code is <strong>FIRST100</strong></li>
+<li>So if guest performs the checkout and enters <strong>FIRST100</strong> as voucher code, the system
+will do the following:<ol>
+<li>If there's a quota left, the amount will be reduced by 5 %.</li>
+<li>If there's no quota left, the guest will not have a reduction.</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><code>100</code></p>
+</div>
+<h3 id="default-boolean">default (<code>boolean</code>)</h3>
+<p>This voucher will be the blueprint for creating vouchers for <a href="#usage"><code>usage.CUSTOMER</code></a> if
+you want to invite guest to join your voucher program.</p>
+<div class="admonition tip">
+<p class="admonition-title">Default</p>
+<p><code>false</code></p>
+</div>
+<h3 id="deactivated-boolean">deactivated (<code>boolean</code>)</h3>
+<p>Easily mark a voucher as not valid anymore.</p>
+<div class="admonition tip">
+<p class="admonition-title">Default</p>
+<p><code>false</code></p>
+</div>
+<h3 id="customerreference-json">customerReference (<code>json</code>)</h3>
+<p>You can provide more details about the owner of the voucher - if you have.</p>
+<div class="admonition tip">
+<p class="admonition-title">Object definition</p>
+<p>We recommend to use this structure, to serialize the data.
+Provide only fields you have.</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="s2">&quot;firstname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="s2">&quot;lastname&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="s2">&quot;phone&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="s2">&quot;salutation&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Choose from `Mr`, `Mrs`&quot;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<h3 id="thirdpartypayload-json">thirdPartyPayload (<code>json</code>)</h3>
+<p>You can add own information to a generated voucher. </p>
+<div class="admonition warning">
+<p class="admonition-title">We will not process any of the information in this property</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Object definition</p>
+<p>It's up to you, what you want to add.</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="s2">&quot;appRef&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="s2">&quot;customerId&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="s2">&quot;arragementId&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<h3 id="codegeneratorsettings-vouchercodegeneratorsettings">codeGeneratorSettings (<code>VoucherCodeGeneratorSettings</code>)</h3>
+<p>You can use a built in generator to let you create codes.</p>
+<div class="admonition explanation">
+<p class="admonition-title">Definition</p>
+<p>Defines how the code should look like, when automatically generated.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charset</td>
+<td><code>enum</code></td>
+<td>Defines, which chars sould be used. Can be <code>numerical</code>, <code>alphanumerical</code>, <code>alphabetical</code>.</td>
+<td><code>numerical</code></td>
+</tr>
+<tr>
+<td>length</td>
+<td><code>number</code></td>
+<td>Length of code</td>
+<td>8</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td><code>string</code></td>
+<td>You can define a patter by using <code>#</code>. Each <code>#</code> will be replaced by a char of the genrator code. All other than <code>#</code> will count as one character as well.</td>
+<td><code>####-###</code></td>
+</tr>
+<tr>
+<td>prefix</td>
+<td><code>string</code></td>
+<td>Use this to add something before the code.</td>
+<td><code>empty</code></td>
+</tr>
+<tr>
+<td>suffix</td>
+<td><code>string</code></td>
+<td>Use this to add someting to the end.</td>
+<td><code>empty</code></td>
+</tr>
+<tr>
+<td>uppercase</td>
+<td><code>boolean</code></td>
+<td>If using <code>alphabetical</code> or <code>alphanumerical</code> all chars will be uppercase if <code>true</code> - otherwise it could be a mix of upper- and lowercase characters.</td>
+<td>abc</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!--end-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Fanz GmbH
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
